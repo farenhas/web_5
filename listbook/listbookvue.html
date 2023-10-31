@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>listbook</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    .klik {
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <div id="list">
+    <p>List Book: Faren-5025221031</p>
+   <ul>
+    <li v-for ="a in books" :class="{ klik: a.isBlock }" v-on:click = "funct(a)">
+      {{ a.title }} ; {{ a.author}} ; {{ a.year}}
+    </li>
+  </ul>
+  </div>
+  <script src="appvue.js"></script>
+  
+</body>
+</html>

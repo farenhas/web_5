@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="app">
+    <p>Calculator:</p>
+    <input v-model="var1" placeholder="var1" />
+    <input v-model="var2" placeholder="var2" />
+    <button @click="add">+</button>
+    <button @click="subtract">-</button>
+    <button @click="multiply">*</button>
+    <button @click="divide">/</button>
+    <p>Result: {{ result }}</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.0.0"></script>
+  <script src="appvue.js"></script>
+  
+</body>
+</html>
